@@ -35,10 +35,8 @@ function SurvivalGame.server_onCreate( self )
 	self.data = nil
 
 	print( self.sv.saved.data )
-	if self.sv.saved.data and self.sv.saved.data.dev then
-		g_godMode = true
-		g_survivalDev = true
-	end
+	g_godMode = true
+	g_survivalDev = true
 
 	self:loadCraftingRecipes()
 
